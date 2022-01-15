@@ -21,7 +21,7 @@
     <div class="container">
         <h2 class="text-center mt-5">Generate Fake profile</h2>
         <div class="row justify-content-center mt-3">
-            <div class=" col-6 ">
+            <div class=" col-md-6 ">
                 <div class="form-floating mb-3 ">
                     <input type="text" class="form-control " id="fullName" placeholder="name" value="">
                     <label for="fullName ">Enter Name</label>
@@ -50,7 +50,7 @@
                     <input type="file" accept="image/*" onchange="loadFile(event)">
                     <img class="output" />
                 </div>
-                <div class="d-grid gap-2 col-6 mx-auto mb-5">
+                <div class="d-grid gap-2 col-12 col-md-6 mx-auto mb-5">
                     <button class="btn btn-outline-success" id="btnNewData" type="button">New Fake Data</button>
                     <button class="btn btn-outline-success" id="btnGenerate" type="button">Generate</button>
                 </div>
@@ -61,11 +61,11 @@
     <div id="result" class="d-none">
         <h3 class="text-center mb-5">Generated Fake Data</h3>
         <div class="row justify-content-center">
-            <div class="col-3">
+            <div class="col-md-3">
                 <h3>Image</h3>
-                <img class="output" />
+                <img class="output mb-4" />
             </div>
-            <div class="col-6">
+            <div class="col-md-6">
                 <h3>Your Info</h3>
                 <h5 id="showResult" class="lineHeight"></h5>
             </div>
@@ -73,7 +73,7 @@
     </div>
     <div id="printBtn" class="container d-none">
         <div class="row justify-content-center">
-            <div class="col-3">
+            <div class="col-md-3">
                 <button onclick="window.print()">Print The Output</button>
             </div>
         </div>
